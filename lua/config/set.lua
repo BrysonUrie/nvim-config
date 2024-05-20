@@ -54,4 +54,4 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 -- Configure username in instant.nvim
-vim.g.instant_username = "lilstrudel"
+vim.g.instant_username = "brysonurie"
