@@ -7,7 +7,7 @@ return {
     configs.setup({
       ensure_installed = { "c", "lua", "vim", "javascript", "typescript" },
       sync_install = false,
-      auto_install = false,
+      auto_install = true,
       highlight = { enable = true },
       indent = { enable = true },
     })
@@ -18,5 +18,5 @@ return {
         vim.cmd("TSBufDisable highlight")
       end,
     })
-  end
+  end,
 }

@@ -1,6 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
-  dependenies = {
+  dependencies = {
     {
       "folke/lazydev.nvim",
       ft = "lua",
@@ -17,5 +17,10 @@ return {
 
     lsp.lua_ls.setup({ capabilities = capabilities })
     lsp.pyright.setup({ capabilities = capabilities })
+    -- lsp.ts_ls.setup({ capabilities = capabilities })
+    lsp.html.setup({ capabilities = capabilities })
+    lsp.emmet_ls.setup({ capabilities = capabilities, filetypes = { "html", "typescriptreact" } })
+
+    vim.keymap.set("n", "<leader>dg", vim.diagnostic.open_float, { noremap = true, silent = true })
   end,
 }

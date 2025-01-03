@@ -2,7 +2,7 @@
 vim.g.mapleader = " "
 
 -- Makes the cursor a block always
-vim.opt.guicursor = "a:block"
+vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver40-Cursor-blinkwait100-blinkon1000-blinkoff100,r-cr-o:hor20"
 
 -- Enables relative line numbers
 vim.opt.nu = true
@@ -57,5 +57,7 @@ vim.opt.isfname:append("@-@")
 vim.g.instant_username = "brysonurie"
 
 vim.g.markdown_fenced_languages = {
-	"ts=typescript",
+  "ts=typescript",
 }
+
+vim.sessionoptions = "blank,buffers,curdir,folds,help,options,tabpages,winsize,terminal"
